@@ -25,6 +25,7 @@ git clone https://github.com/Toneyaya/CoTDet.git
 # create conda environment
 cd CoTDet
 conda env create -f environment.yaml
+conda activate cotdet
 # install detectron2 
 python -m pip install -e detectron2
 # install MultiScaleDeformableAttention
