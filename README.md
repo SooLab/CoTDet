@@ -1,7 +1,7 @@
 CoTDet: Affordance Knowledge Prompting for Task Driven Object Detection
 ========
 
-[Jiajin Tang*](https://toneyaya.github.io/), Ge Zheng*, [Jingyi Yu](https://vic.shanghaitech.edu.cn/vrvc/en/people/u), and [Sibei Yang](https://faculty.sist.shanghaitech.edu.cn/yangsibei/). *denotes equal contribution. This repository is the official implementation of our [CoTDet](https://arxiv.org/abs/2309.01093).
+[Jiajin Tang*](https://toneyaya.github.io/), Ge Zheng*, [Jingyi Yu](https://vic.shanghaitech.edu.cn/vrvc/en/people), and [Sibei Yang](https://faculty.sist.shanghaitech.edu.cn/yangsibei/). *denotes equal contribution. This repository is the official implementation of our [CoTDet](https://arxiv.org/abs/2309.01093).
 
 ***
 
