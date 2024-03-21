@@ -57,8 +57,25 @@ OPENBLAS_NUM_THREADS=1 python train_net.py --num-gpus 8 --config-file configs/CO
 ```
 ***
 ## Results
+**Object detection results on COCO-Tasks dataset.** \* indicates the evaluation results of release weight.
+| Method  | Task1  | Task2  | Task3  | Task4  | Task5  | Task6  | Task7  | Task8  | Task9  | Task10 | Task11 | Task12 | Task13 | Task14 | Avg    |
+| ------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| GGNN    | 36.6   | 29.8   | 40.5   | 37.6   | 41.0   | 17.2   | 43.6   | 17.9   | 21.0   | 40.6   | 22.3   | 28.4   | 39.1   | 40.7   | 32.6   |
+| TOIST   | 45.8   | 40.0   | 49.4   | 49.6   | 53.4   | 26.9   | 58.3   | 22.6   | 32.5   | 50.0   | 35.5   | 43.7   | 52.8   | 56.2   | 44.1   |
+| CoTDet  | 58.9   | 55.0   | 51.2   | 68.5   | 60.5   | 47.7   | 76.9   | 40.7   | 47.4   | 66.5   | 41.9   | 48.3   | 61.7   | 71.4   | 56.9   |
+| CoTDet* | 62.962 | 54.534 | 53.020 | 62.426 | 66.486 | 49.404 | 74.877 | 46.025 | 50.449 | 66.916 | 51.278 | 52.880 | 70.419 | 75.049 | 59.766 |
 
+***
 
+**Instance segmentatio results on COCO-Tasks dataset.** \* indicates the evaluation results of release weight.
+| Method  | Task1  | Task2  | Task3  | Task4  | Task5  | Task6  | Task7  | Task8  | Task9  | Task10 | Task11 | Task12 | Task13 | Task14 | Avg    |
+| ------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| GGNN    | 31.8   | 28.6   | 45.4   | 33.7   | 46.8   | 16.6   | 37.8   | 15.1   | 15.0   | 49.9   | 24.9   | 18.9   | 49.8   | 39.7   | 32.4   |
+| TOIST   | 40.8   | 36.5   | 48.9   | 37.8   | 43.4   | 22.1   | 44.4   | 20.3   | 26.9   | 48.1   | 31.8   | 34.8   | 51.5   | 46.3   | 38.8   |
+| CoTDet  | 55.0   | 51.6   | 51.2   | 57.7   | 60.1   | 43.1   | 65.9   | 40.4   | 45.4   | 64.8   | 40.4   | 48.7   | 61.7   | 64.4   | 53.6   |
+| CoTDet* | 57.773 | 51.467 | 53.094 | 52.431 | 66.205 | 45.676 | 64.104 | 44.021 | 46.401 | 66.465 | 49.655 | 49.380 | 71.157 | 66.027 | 55.990 |
+
+***
 If you find our work helpful for your research, please consider citing the following BibTeX entry.
 
 ```BibTeX
