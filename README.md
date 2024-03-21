@@ -17,7 +17,8 @@ In this paper, we focus on challenging task driven object detection, which is pr
 
 ## Getting Strated
 **1. Prepare the code and the environment**
-Git clone our repository, creating a python environment and activate it via the following command
+
+Git clone our repository, creating a python environment and activate it via the following command.
 ``` bash
 # clone repository
 git clone https://github.com/Toneyaya/CoTDet.git
