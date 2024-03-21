@@ -1,0 +1,21 @@
+name: cotdet
+channels:
+  - pytorch
+  - defaults
+  - anaconda
+dependencies:
+  - python=3.9
+  - cudatoolkit
+  - pip
+  - pip:
+    - torch==2.0.1
+    - torchaudio
+    - torchvision
+    - cython
+    - scipy
+    - shapely
+    - timm
+    - h5py
+    - submitit
+    - scikit-image
+    - opencv-python
