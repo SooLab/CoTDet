@@ -54,7 +54,7 @@ OPENBLAS_NUM_THREADS=1 python train_net.py --num-gpus 8 --config-file configs/CO
 ## Evaluation
 You can download our model [here](https://drive.google.com/file/d/16mlb35W94smyPYMcAv2LhEaLXRCEsWJn/view?usp=sharing) and enter the paths for evaluation. Of course, you can also evaluate your training results in the same way.
 ```python
-OPENBLAS_NUM_THREADS=1 python train_net.py --num-gpus 8 --config-file configs/COCOTASK_R101.yaml --eval-only MODEL.WEIGHT ckpt_path
+OPENBLAS_NUM_THREADS=1 python train_net.py --num-gpus 8 --config-file configs/COCOTASK_R101.yaml --eval-only MODEL.WEIGHTS ckpt_path
 ```
 ***
 ## Results
