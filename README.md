@@ -42,7 +42,7 @@ CoTDet
       ├── 3.jpg
       ├── ...
 ```
-**3. Download our pre-trained [weights](https://drive.google.com/file/d/1gbLC1obJg9rYFwdTquwLiRJb22nj9nuQ/view?usp=sharing) which is pre-trained on a subset of the coco data removing all images that are duplicates of coco-tasks. Then put the pretrain weight path [here](configs/COCOTASK_R101.yaml#3) at line 3.**
+**3. Download our pre-trained [weight](https://drive.google.com/file/d/1gbLC1obJg9rYFwdTquwLiRJb22nj9nuQ/view?usp=sharing) which is pre-trained on a subset of the coco dataset removing all images that are duplicates of coco-tasks. Then put the pretrain weight path [here](configs/COCOTASK_R101.yaml#3) at line 3.**
 ***
 ## Training
 
