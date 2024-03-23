@@ -71,6 +71,7 @@ def create_ddp_model(model, *, fp16_compression=False, **kwargs):
         return model
     if "device_ids" not in kwargs:
         kwargs["device_ids"] = [comm.get_local_rank()]
+    kwargs["find_unused_parameters"] = True
     ddp = DistributedDataParallel(model, **kwargs)
     if fp16_compression:
         from torch.distributed.algorithms.ddp_comm_hooks import default as comm_hooks
@@ -311,7 +312,7 @@ class DefaultPredictor:
                 original_image = original_image[:, :, ::-1]
             height, width = original_image.shape[:2]
             image = self.aug.get_transform(original_image).apply_image(original_image)
-            image = torch.as_tensor(image.astype("float32").transpose(2, 0, 1))
+            image = torch.as_tensor(image.astype("float32").trzanspose(2, 0, 1))
             image.to(self.cfg.MODEL.DEVICE)
 
             inputs = {"image": image, "height": height, "width": width}
