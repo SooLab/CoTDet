@@ -145,3 +145,5 @@ for i in range(n):
   ds[tasks[i]] = (word_emb_tensor, sentence_emb_tensor)
 
   print(f"DONE {tasks[i]}")
+  with open('knowledge_base.pkl', 'wb') as handle:
+    pickle.dump(ds, handle, protocol=pickle.HIGHEST_PROTOCOL)
